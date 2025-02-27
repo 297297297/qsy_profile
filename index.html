@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钱书阳的个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            background-color: #555;
+        }
+
+        /* 容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 每个部分的样式 */
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .section p, .section ul {
+            font-size: 14px;
+        }
+
+        /* 个人简介样式 */
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 150px; /* 设置最大宽度 */
+            height: auto; /* 高度自动适应，保持比例 */
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover; /* 确保图片在容器内保持比例 */
+        }
+
+        /* 联系方式样式 */
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* 底部样式 */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* 媒体查询（响应式设计） */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            .profile {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about" class="active">关于我</a>
+        <a href="#education">教育背景</a>
+        <a href="#experience">实习经历</a>
+        <a href="#projects">项目经历</a>
+        <a href="#skills">技能特长</a>
+        <a href="#contact">联系方式</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>关于我</h2>
+            <div class="profile">
+                <img src="profile.jpg" alt="钱书阳">
+                <div>
+                    <p><strong>姓名：</strong>钱书阳</p>
+                    <p><strong>出生年月：</strong>2002.02</p>
+                    <p><strong>籍贯：</strong>湖北咸宁</p>
+                    <p><strong>个人品质：</strong>性格开朗、善于沟通、做事认真有规划性、学习和抗压能力较高</p>
+                    <p><strong>兴趣爱好：</strong>旅游，羽毛球</p>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="section">
+            <h2>教育背景</h2>
+            <p><strong>2024年9月 - 2025年7月：</strong> 香港大学（QS 17），商业分析，硕士学历</p>
+            <p><strong>2020年9月 - 2024年6月：</strong> 上海大学（211），信息管理与信息系统，本科学历，GPA：3.75/4.0</p>
+            <p><strong>奖励及荣誉：</strong>学业奖学金2次；创新创业奖学金；公益爱心奖学金；上海大学管理学院优秀学生</p>
+        </section>
+        <section id="experience" class="section">
+            <h2>实习经历</h2>
+            <div class="experience">
+                <h3>2023年6月 - 2023年8月：武汉华工赛百数据系统有限公司（数据分析实习生）</h3>
+                <ul>
+                    <li>主导CMP数据集的整合、清洗和预处理，确保数据质量达到分析标准。</li>
+                    <li>实施特征工程，构建并优化预测模型（随机森林、梯度提升回归树、XGBoost回归）。</li>
+                    <li>与客户紧密合作，传达数据分析项目的进展和成果。</li>
+                    <li>成功识别CMP过程中的关键变量，提出改进建议。</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>2022年6月 - 2022年8月：软通动力信息技术有限公司（经营分析实习生）</h3>
+                <ul>
+                    <li>整理和分析华为云产品的销售数据，制作数据周报。</li>
+                    <li>执行产品销售评估，分析用户购买行为。</li>
+                    <li>提供优化销售策略的有价值洞察。</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2>项目经历</h2>
+            <div class="project">
+                <h3>2024年1月 - 2024年5月：元宇宙技术在文旅领域的应用（论文）</h3>
+                <ul>
+                    <li>基于LDA主题建模和时间序列分析，探究影响用户体验的关键因素。</li>
+                    <li>提出文旅元宇宙的设计、开发和用户体验优化策略。</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>2021年11月 - 2022年8月：全国大学生电子商务“创新、创意及创业”挑战赛（队长）</h3>
+                <ul>
+                    <li>担任队长，负责项目管理和沟通。</li>
+                    <li>撰写并提交项目报告，获得上海市优胜奖及校一等奖。</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>技能特长</h2>
+            <div class="skill-category">
+                <h3>工作技能</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Excel（制作报表，vlookup，数据透视表）</li>
+                    <li>PPT</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>语言能力</h3>
+                <ul>
+                    <li>雅思7.0</li>
+                    <li>CET-6</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <section id="contact" class="section">
+        <h2>联系方式</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-phone"></i> 15107247256
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i> <a href="mailto:2545727048@qq.com">2545727048@qq.com</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 钱书阳的个人主页</p>
+    </footer>
+</body>
+</html>
